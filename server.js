@@ -69,6 +69,10 @@ connectDB();
 //     res.status(200).json({message: 'this is the users root route'});
 // });
 
+app.use('/api/test', (req, res) => {
+  res.send({message: "server is working"})
+})
+
 app.use(errorHandler);
 
 
